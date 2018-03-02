@@ -1,0 +1,130 @@
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/title_bar_height"
+    android:background="@color/white">
+
+    <!-- Child 0 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="@string/label_gender" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp">
+
+                <Spinner
+                    android:id="@+id/field_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/gender_array"
+                    android:prompt="@string/label_gender"
+                    android:spinnerMode="dropdown" />
+            </FrameLayout>
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="@string/label_date_birth" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:id="@+id/field_date_birth"
+                    style="@style/Widget.AppCompat.Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="24dp"
+                    android:textSize="18dp" />
+            </FrameLayout>
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="@string/label_street" />
+
+            <EditText
+                android:id="@+id/field_street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:hint="@string/hint_type_address"
+                android:singleLine="true" />
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="@string/label_city" />
+
+            <EditText
+                android:id="@+id/field_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:hint="@string/hint_type_city"
+                android:singleLine="true" />
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="@string/label_postcode" />
+
+            <EditText
+                android:id="@+id/field_postcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:hint="@string/hint_type_postcode"
+                android:singleLine="true" />
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="@string/label_nhs_number" />
+
+            <EditText
+                android:id="@+id/field_nhs_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:hint="@string/hint_nhs_number"
+                android:singleLine="true" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Child 1 -->
+    <ProgressBar
+        style="?android:attr/progressBarStyleInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</ViewFlipper>

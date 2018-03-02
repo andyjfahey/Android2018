@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/title_bar_height"
+                android:background="@color/vegas_gold"
+                android:fillViewport="true"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/add_key_contact_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tiffany_blue"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Add Key Contact"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="right|end"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/add_key_contact_layout"
+        android:layout_margin="16dp"
+        android:background="@color/white"
+        android:orientation="vertical"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/contact_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="32dp"
+        android:src="@drawable/ic_notification_add_light"/>
+
+</RelativeLayout>

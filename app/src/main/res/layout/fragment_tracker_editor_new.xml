@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/title_bar_height"
+    android:background="@color/tracker_entry_screen_background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/trackers_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/tracker_header_background"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/tracker_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tracker_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Tracker name"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+<!--            <ViewStub
+                android:id="@+id/tracker_edit_text_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:inflatedId="@+id/tracker_edit_text_panel"
+                android:layout="@layout/tracker_edit_text" />-->
+
+            <LinearLayout
+                android:id="@+id/tracker_enum_panel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/date_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_weight="0.5"
+                    android:text="Date"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/time_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_weight="0.5"
+                    android:text="Time"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/date_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/select_date"
+                    android:textColor="@color/text_label"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/time_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/select_date"
+                    android:textColor="@color/text_label"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/tiffany_blue" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/tiffany_blue" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/hint_note2"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/tracker_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@null"
+                    android:hint="@string/hint_note2"
+                    android:textColorHint="@color/note_hint_color"
+                    android:textSize="20sp" />
+
+                <uk.co.healtht.healthtouch.ui.widget.ExpandableHeightListView
+                    android:id="@+id/list_questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tracker_note"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

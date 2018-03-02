@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="@dimen/title_bar_height"
+              android:background="@color/white"
+              android:fillViewport="true"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tracker_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/label_reminders"
+        android:textAllCaps="true"
+        android:textColor="@color/label_color"
+        android:textSize="20sp"/>
+
+
+    <LinearLayout
+        android:id="@+id/repeat_interval_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reminder Frequency"/>
+
+        <Spinner
+            android:id="@+id/repeat_interval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/transparent_black"/>
+
+    <LinearLayout
+        android:id="@+id/repeat_startdate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reminder Start Date"/>
+
+        <TextView
+            android:id="@+id/date_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/text_label"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/transparent_black"/>
+
+    <LinearLayout
+        android:id="@+id/interval_on_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="On"/>
+
+        <Spinner
+            android:id="@+id/interval_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/transparent_black"/>
+
+
+    <LinearLayout
+        android:id="@+id/interval_at_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reminder Time"/>
+
+        <TextView
+            android:id="@+id/interval_at"
+            style="@style/Widget.AppCompat.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/transparent_black"/>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/title_bar_height"
+            android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tracker_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textAllCaps="true"
+            android:textColor="@color/label_color"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:id="@+id/tracker_reminders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_reminders"
+            android:drawableRight="@drawable/ic_settings_cog"
+            android:background="@drawable/item_menu_overlay"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:textAllCaps="true"
+            android:textColor="@color/label_color"
+            android:textSize="24dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/menu_separator"/>
+
+        <TextView
+            android:id="@+id/tracker_thresholds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_thresholds"
+            android:drawableRight="@drawable/ic_edit"
+            android:background="@drawable/item_menu_overlay"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:textAllCaps="true"
+            android:textColor="@color/label_color"
+            android:textSize="24dp"/>
+    </LinearLayout>
+</ScrollView>

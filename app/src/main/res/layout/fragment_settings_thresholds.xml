@@ -1,0 +1,47 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/title_bar_height"
+            android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/treshold_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tracker_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/label_thresholds"
+            android:textAllCaps="true"
+            android:textColor="@color/label_color"
+            android:textSize="24dp"/>
+
+
+        <!-- We will programmatically inject the items here -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/threshold_warning"
+            android:textColor="@color/label_color"
+            android:textSize="14dp"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/btn_save"/>
+
+    </LinearLayout>
+</ScrollView>

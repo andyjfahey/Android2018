@@ -1,0 +1,144 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.AppCompat.ActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/field_first_name"
+                style="@style/TextLabel"
+                android:hint="@string/label_first_name" />
+
+            <EditText
+                android:id="@+id/field_last_name"
+                style="@style/TextLabel"
+                android:hint="@string/label_last_name" />
+
+            <EditText
+                android:id="@+id/field_email"
+                style="@style/TextLabel"
+                android:hint="@string/label_email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/field_user_name"
+                style="@style/TextLabel"
+                android:hint="@string/label_user_name"
+                android:inputType="textEmailAddress" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/TableLabel"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/label_gender"
+                        android:textColor="@color/text_color" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <Spinner
+                            android:id="@+id/field_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/gender_array"
+                            android:prompt="@string/label_gender"
+                            android:spinnerMode="dropdown" />
+                    </FrameLayout>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/TableLabel"
+                        android:text="@string/label_date_birth"
+                        android:textColor="@color/text_color" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/field_date_birth"
+                            style="@style/Widget.AppCompat.Spinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="24dp"
+                            android:textSize="18dp" />
+                    </FrameLayout>
+                </TableRow>
+
+            </TableLayout>
+
+            <EditText
+                android:id="@+id/field_password"
+                style="@style/TextLabel"
+                android:hint="@string/label_password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/field_password_confirm"
+                style="@style/TextLabel"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/label_confirm"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/btn_indigo"
+            android:text="@string/btn_sign_up"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_main"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_account_t_and_c"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/btn_t_and_c"
+                style="@style/Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_t_and_c"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

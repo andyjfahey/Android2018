@@ -1,0 +1,163 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFBFBFBF"/>
+
+    <LinearLayout
+        android:id="@+id/tracker_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tracker_tab_week"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/item_tab_background"
+            android:gravity="center"
+            android:text="@string/week"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#FEFEFE"/>
+
+        <TextView
+            android:id="@+id/tracker_tab_month"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/item_tab_background"
+            android:gravity="center"
+            android:text="@string/month"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#FEFEFE"/>
+
+        <TextView
+            android:id="@+id/tracker_tab_year"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/item_tab_background"
+            android:gravity="center"
+            android:text="@string/year"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#FEFEFE"/>
+
+        <TextView
+            android:id="@+id/tracker_tab_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/item_tab_background"
+            android:gravity="center"
+            android:text="@string/all"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#FEFEFE"/>
+
+        <TextView
+            android:id="@+id/tracker_tab_start_end"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/item_tab_background"
+            android:gravity="center"
+            android:text="@string/custom"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/start_end_dates_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tracker_tab"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/set_period_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/start"/>
+
+        <TextView
+            android:id="@+id/start_date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/set_period_label"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/click_start_date"/>
+
+        <TextView
+            android:id="@+id/to_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/start_date_text_view"
+            android:textSize="16sp"
+            android:text="@string/end"/>
+
+        <TextView
+            android:id="@+id/end_date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/to_label"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/click_end_date"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FF8C8C8C"/>
+
+    <TextView
+        android:id="@+id/empty_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:gravity="center_horizontal"
+        android:text="@string/chart_empty_label"
+        android:textSize="16dp"
+        android:textColor="#FF8E8E8E"
+        android:visibility="gone"/>
+
+    <com.github.mikephil.charting.charts.MyLineChart
+        android:id="@+id/line_chart"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tracker_tab"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"/>
+
+    <com.github.mikephil.charting.charts.MyBarChart
+        android:id="@+id/bar_chart"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tracker_tab"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>

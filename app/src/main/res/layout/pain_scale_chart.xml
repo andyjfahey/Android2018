@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/pain_scale_chart"
+    android:layout_height="wrap_content">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <!--spacer at start-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"/>
+
+        android:id="@+id/painText0"
+
+        <TextView
+            android:id="@+id/painText0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000ff00"
+            android:layout_weight="1"
+            android:tag="0"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/painText1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000ff00"
+            android:layout_weight="1"
+            android:tag="1"
+            android:clickable="true" />
+        <TextView
+            android:id="@+id/painText2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000ff00"
+            android:layout_weight="1"
+            android:tag="2"
+            android:clickable="true" />
+        <TextView
+            android:id="@+id/painText3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000ff00"
+            android:layout_weight="1"
+            android:tag="3"
+            android:clickable="true" />
+        <TextView
+            android:id="@+id/painText4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000ff00"
+            android:layout_weight="1"
+            android:tag="4"
+            android:clickable="true" />
+        <TextView
+            android:id="@+id/painText5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000ff00"
+            android:layout_weight="1"
+            android:tag="5"
+            android:clickable="true" />
+        <TextView
+            android:id="@+id/painText6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000ff00"
+            android:layout_weight="1"
+            android:tag="6"
+            android:clickable="true" />
+        <TextView
+            android:id="@+id/painText7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000ff00"
+            android:layout_weight="1"
+            android:tag="7"
+            android:clickable="true" />
+        <TextView
+            android:id="@+id/painText8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000ff00"
+            android:layout_weight="1"
+            android:tag="8"
+            android:clickable="true" />
+        <TextView
+            android:id="@+id/painText9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000ff00"
+            android:layout_weight="1"
+            android:tag="9"
+            android:clickable="true" />
+        <TextView
+            android:id="@+id/painText10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000ff00"
+            android:layout_weight="1"
+            android:tag="10"
+            android:clickable="true" />
+        <!--spacer at end-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"/>
+    </TableRow>
+
+<!--    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </TableRow>-->
+</TableLayout>

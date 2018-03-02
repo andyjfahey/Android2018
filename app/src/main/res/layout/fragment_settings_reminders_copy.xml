@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/title_bar_height"
+                android:fillViewport="true"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tracker_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/label_reminders"
+        android:textAllCaps="true"
+        android:textColor="@color/label_color"
+        android:textSize="20sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reminder_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tracker_label"
+        android:background="@color/white"
+        android:orientation="vertical"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/reminder_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_notification_add_light"/>
+
+</RelativeLayout>

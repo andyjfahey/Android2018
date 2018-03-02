@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "856258498359",
+    "firebase_url": "https://healthtouch-b05e7.firebaseio.com",
+    "project_id": "healthtouch-b05e7",
+    "storage_bucket": "healthtouch-b05e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856258498359:android:02d92c15a9083598",
+        "android_client_info": {
+          "package_name": "uk.co.healtht.healthtouch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856258498359-qp1h1n68ope6ldfprngjku9a61qv7uer.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "uk.co.healtht.healthtouch",
+            "certificate_hash": "f4cae1d877754b90df41606dc9f206f263cd1f08"
+          }
+        },
+        {
+          "client_id": "856258498359-13iek3ts8qup2t8qsui0hamgfpfpgeb0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD91f02H3A9e6xIcrqUACT0QQh2f3p-r0Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856258498359-13iek3ts8qup2t8qsui0hamgfpfpgeb0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

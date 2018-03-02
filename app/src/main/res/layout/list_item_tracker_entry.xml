@@ -1,0 +1,110 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tracker_entry_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="26dp"/>
+
+            <TextView
+                android:id="@+id/tracker_entry_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/tracker_entry_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_home_overlay"
+                android:clickable="true"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:src="@drawable/ic_tracker_list_delete_dark"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tracker_entry_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@color/green_background_answer">
+
+            <TextView
+                android:id="@+id/question0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/used_your_preventer_inhaler_today"
+                android:drawableRight="@android:drawable/checkbox_on_background"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/using_reliever_inhaler_more_and_more"
+                android:drawableRight="@android:drawable/checkbox_on_background"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/waking_at_night_because_of_wheezing"
+                android:drawableRight="@android:drawable/checkbox_on_background"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/feeling_that_you_cant_keep_up"
+                android:drawableRight="@android:drawable/checkbox_on_background"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/taking_time_of_because_of_asthma"
+                android:drawableRight="@android:drawable/checkbox_on_background"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E0E1"/>
+
+    </LinearLayout>
+</LinearLayout>

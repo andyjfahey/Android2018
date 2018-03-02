@@ -1,0 +1,37 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+//apply plugin: 'com.github.ben-manes.versions'
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url "https://jitpack.io" }
+    }
+}
+
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url 'https://maven.fabric.io/public' }
+//        maven { url "https://jitpack.io" }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.0'
+        classpath 'io.fabric.tools:gradle:1.20.1'
+//        classpath 'com.github.ben-manes:gradle-versions-plugin:0.11.3'
+//        classpath 'org.eclipse.jgit:org.eclipse.jgit:4.0.0.201505050340-m2'
+//        classpath 'org.ajoberstar:gradle-git:1.3.0'
+        classpath 'com.google.gms:google-services:3.1.0'
+        // gradlew dependencyUpdates -Drevision=release
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+
+

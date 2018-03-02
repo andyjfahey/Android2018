@@ -1,0 +1,14 @@
+<!-- [ Mirror metadata ] generatedAt: 1438622206219 -->
+<!-- Generated screen file. Fill the id tags below with content with
+which to populate your previewed layout. For a complete specification
+of sample data, please see http://jimulabs.com/sample-data-specifications/ 
+
+Valid attributes on <screen> tag: theme="@style/someTheme" inEditMode="false" overlay="@drawable/mockup" -->
+<screen>
+    <_content layout="@layout/fragment_login">
+        <!-- TextView Examples:
+        <btn_forgot_password text="@string/string_resource" />
+        <btn_forgot_password text="Text literal" textSize="14sp" /> -->
+        <btn_forgot_password />
+    </_content>
+</screen>

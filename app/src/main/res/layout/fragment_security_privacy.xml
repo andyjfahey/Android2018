@@ -1,0 +1,67 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/title_bar_height"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/settings_security"
+            rv_centered="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingBottom="20dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp"
+            android:paddingTop="20dp"
+            app:rv_color="@color/tiffany_blue">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_menu_overlay"
+                android:text="@string/settings_security"
+                android:textColor="@color/text_label"
+                android:textSize="20dp" />
+        </com.andexert.library.RippleView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/menu_separator" />
+
+        <com.andexert.library.RippleView
+            android:id="@+id/settings_privacy"
+            rv_centered="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingBottom="20dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp"
+            android:paddingTop="20dp"
+            app:rv_color="@color/tiffany_blue">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_menu_overlay"
+                android:text="@string/settings_privacy"
+                android:textColor="@color/text_label"
+                android:textSize="20dp" />
+        </com.andexert.library.RippleView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/menu_separator" />
+
+    </LinearLayout>
+</ScrollView>

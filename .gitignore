@@ -1,0 +1,12 @@
+.gradle
+*.iml
+/local.properties
+.idea/
+.DS_Store
+/build
+/captures
+*.apk
+<<<<<<< HEAD
+app/app-release.apk
+*.apk
+app/app-release.apk

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/tiffany_blue"
+        android:layout_marginTop="1sp" 
+        android:layout_marginBottom="1sp"
+        android:layout_marginRight="1sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tracker_gastro_nausea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1sp"
+            android:text="Nausea"
+            android:gravity="center"
+            android:background="@color/tracker_header_background"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="1sp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/tracker_gastro_nausea_img_add"
+            android:layout_margin="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/plus_circle_white"
+            android:layout_weight="1"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tracker_gastro_nausea_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="1sp"
+        android:layout_marginRight="1sp"
+        android:background="@color/tiffany_blue"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tracker_gastro_bloating"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1sp"
+            android:text="Bloating"
+            android:gravity="center"
+            android:background="@color/tracker_header_background"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:clickable="true" />
+        <TextView
+            android:layout_width="1sp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+        <ImageView
+            android:id="@+id/tracker_gastro_bloating_img_add"
+            android:layout_margin="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/plus_circle_white"
+            android:layout_weight="1"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tracker_gastro_bloating_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="1sp"
+        android:layout_marginRight="1sp"
+        android:background="@color/tiffany_blue"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tracker_gastro_vomiting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1sp"
+            android:text="Vomiting"
+            android:gravity="center"
+            android:background="@color/tracker_header_background"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:clickable="true" />
+        <TextView
+            android:layout_width="1sp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+        <ImageView
+            android:id="@+id/tracker_gastro_vomiting_img_add"
+            android:layout_margin="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/plus_circle_white"
+            android:layout_weight="1"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tracker_gastro_vomiting_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="1sp"
+        android:layout_marginRight="1sp"
+        android:background="@color/tiffany_blue"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tracker_gastro_diarrhoea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1sp"
+            android:text="Diarrhoea"
+            android:gravity="center"
+            android:background="@color/tracker_header_background"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:clickable="true" />
+        <TextView
+            android:layout_width="1sp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+        <ImageView
+            android:id="@+id/tracker_gastro_diarrhoea_img_add"
+            android:layout_margin="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/plus_circle_white"
+            android:layout_weight="1"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tracker_gastro_diarrhoea_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="1sp"
+        android:layout_marginRight="1sp"
+        android:background="@color/tiffany_blue"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tracker_gastro_constipation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Constipation"
+            android:gravity="center"
+            android:background="@color/tracker_header_background"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="1sp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/tracker_gastro_constipation_img_add"
+            android:layout_margin="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:src="@drawable/plus_circle_white"
+            android:layout_weight="1"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tracker_gastro_constipation_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

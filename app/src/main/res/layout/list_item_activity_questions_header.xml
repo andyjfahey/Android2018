@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="160dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <uk.co.healtht.healthtouch.utils.VerticalTextView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="bottom"
+                android:text="Missed Work" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <uk.co.healtht.healthtouch.utils.VerticalTextView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="bottom"
+                android:text="Pain Reduces" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <uk.co.healtht.healthtouch.utils.VerticalTextView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="bottom"
+                android:text="Anxiety Reduces" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/second_separator"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/container"
+        android:background="#000000" />
+</RelativeLayout>

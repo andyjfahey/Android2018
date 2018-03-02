@@ -1,0 +1,87 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="16dp"
+    android:stretchColumns="1">
+
+    <TableRow>
+
+        <TextView
+            style="@style/TableLabel"
+            android:text="@string/label_reminder"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/field_recurrence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/recurrence_array"
+                android:prompt="@string/label_gender"
+                android:spinnerMode="dropdown"/>
+        </FrameLayout>
+    </TableRow>
+
+    <TableRow android:id="@+id/panel_day_of_week">
+
+        <TextView
+            style="@style/TableLabel"
+            android:text="@string/label_day_of_week"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/field_day_of_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:prompt="@string/label_gender"
+                android:spinnerMode="dropdown"/>
+        </FrameLayout>
+    </TableRow>
+
+    <TableRow android:id="@+id/panel_day_of_month">
+
+        <TextView
+            style="@style/TableLabel"
+            android:text="@string/label_month_day"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/field_day_of_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:prompt="@string/label_gender"
+                android:spinnerMode="dropdown"/>
+        </FrameLayout>
+    </TableRow>
+
+    <TableRow android:id="@+id/panel_time">
+
+        <TextView
+            style="@style/TableLabel"
+            android:text="@string/label_at"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/field_time"
+                style="@style/Widget.AppCompat.Spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="24dp"
+                android:textSize="18dp"/>
+        </FrameLayout>
+    </TableRow>
+
+</TableLayout>

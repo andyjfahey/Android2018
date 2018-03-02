@@ -1,0 +1,174 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+apply plugin: 'io.fabric'
+//apply plugin: 'com.google.gms.google-services'
+
+//import org.ajoberstar.grgit.Grgit
+
+android {
+    signingConfigs {
+//        fabricConfig {
+//            keyAlias 'healthcare'
+//            keyPassword 'healthy'
+//            storeFile file('../healthcare.jks')
+//            storePassword 'healthy'
+//        }
+        releaseConfig {
+            keyAlias 'healthtouch'
+            keyPassword 'ZoCW7u5Os1qU1234'
+            storeFile file('../healthtouch.jks')
+            storePassword 'ZoCW7u5Os1qU'
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 23
+    buildToolsVersion '26.0.1'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    defaultConfig {
+        multiDexEnabled true
+        applicationId 'uk.co.healtht.healthtouch'
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1030
+        versionName "1.3.0"
+        //vectorDrawables.useSupportLibrary = true
+        //generatedDensities = []
+        // For libraries, don't add languages we don't support... Not sure about other resources
+        resConfigs "en", "en_GB"
+        // resConfigs "nodpi", "hdpi", "xhdpi", "xxhdpi", "xxxhdpi"
+    }
+/*    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }*/
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.releaseConfig
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+        release {
+            minifyEnabled false
+            debuggable false
+            signingConfig signingConfigs.releaseConfig
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            ext.betaDistributionReleaseNotesFilePath = "app/release_notes.txt"
+        }
+//        crashlyticsRelease {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            ext.betaDistributionReleaseNotesFilePath = "app/beta_notes.txt"
+//            ext.betaDistributionGroupAliases = "healthtouch"
+//            signingConfig signingConfigs.fabricConfig
+//        }
+    }
+    // The release password should not be stored on the repository. Use a build parameter, eg:
+    // gradlew assembleRelease -PsignPass=xxxx [crashlyticsUploadDistributionRelease]
+//    if (project.hasProperty('signPass')) {
+//        signingConfigs {
+//            release {
+//                storeFile file("../release.jks")
+//                keyAlias "Android"
+//                storePassword signPass
+//                keyPassword signPass
+//            }
+//        }
+
+//        buildTypes.release {
+//            signingConfig signingConfigs.release
+//        }
+//    }
+    lintOptions {
+        lintConfig file("lint.xml")
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    // Crashlytics Kit
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+        transitive = true
+    }
+    //    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+//    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+//    compile('com.squareup.retrofit2:converter-simplexml:2.1.0') {
+//        exclude group: 'xpp3', module: 'xpp3'
+//        exclude group: 'stax', module: 'stax-api'
+//        exclude group: 'stax', module: 'stax'
+//    }
+//    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+//    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile project(':MPChartLib')
+    compile project(':rippleview')
+
+    //    compile 'com.afollestad.material-dialogs:core:0.9.4.6'
+    compile('com.afollestad.material-dialogs:core:0.8.1.0@aar') {
+        transitive = true
+    }
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.google.android.gms:play-services-gcm:11.0.4'
+    compile 'com.mcxiaoke.volley:library:1.0.16'
+    compile 'org.mapdb:mapdb:2.0-beta6'
+    compile 'com.github.citux:datetimepicker:0.2.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.j256.ormlite:ormlite-android:5.0'
+    compile 'com.google.firebase:firebase-messaging:11.0.4'
+}
+
+apply plugin: 'com.google.gms.google-services'
+//push changes to development branch, does not commit or add!
+//gradle -q push
+//task push << {
+//    def grgit = Grgit.open(dir: project.file('../.').path)
+//    grgit.checkout(branch: 'Development', createBranch: false)
+//    grgit.push(all: false)
+//}
+//
+////commit and push changes to development branch
+////gradle -q commitPush -P paramMessage="your message"
+//task commitPush << {
+//    def grgit = Grgit.open(dir: project.file('../.').path)
+//    grgit.checkout(branch: 'Development', createBranch: false)
+//    grgit.commit(message: paramMessage, all: true)
+//    grgit.push(all: false)
+//}
+//
+////commit, push to development branch and release to crashlytics
+////gradle commitPushRelease -P paramMessage="your message"
+//task commitPushRelease << {
+//    crashlyticsUploadDistributionCrashlyticsRelease.execute()
+//}
+//
+////push to development branch and release to crashlytics
+////gradle pushRelease
+//task pushRelease << {
+//    crashlyticsUploadDistributionCrashlyticsRelease.execute()
+//}
+//
+//assembleCrashlyticsRelease.dependsOn clean
+//commitPushRelease.dependsOn assembleCrashlyticsRelease
+//commitPushRelease.dependsOn commitPush
+//
+//pushRelease.dependsOn assembleCrashlyticsRelease
+//pushRelease.dependsOn push

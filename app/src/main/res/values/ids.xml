@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="graph_image_view" type="id"/>
+    <item name="graph_bitmap_renewal_state" type="id"/>
+
+</resources>

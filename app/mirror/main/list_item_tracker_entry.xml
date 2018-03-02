@@ -1,0 +1,20 @@
+<!-- [ Mirror metadata ] generatedAt: 1438622206190 -->
+<!-- Generated screen file. Fill the id tags below with content with
+which to populate your previewed layout. For a complete specification
+of sample data, please see http://jimulabs.com/sample-data-specifications/ 
+
+Valid attributes on <screen> tag: theme="@style/someTheme" inEditMode="false" overlay="@drawable/mockup" -->
+<screen>
+    <_content layout="@layout/list_item_tracker_entry">
+        <!-- TextView Examples:
+        <tracker_entry_value text="@string/string_resource" />
+        <tracker_entry_value text="Text literal" textSize="14sp" /> -->
+        <tracker_entry_value />
+        <tracker_entry_time />
+        <!-- ImageView Examples:
+        <tracker_entry_delete src="@drawable/image_resource" />
+        <tracker_entry_delete src="relative_path/image.jpg" /> -->
+        <tracker_entry_delete />
+        <tracker_entry_note />
+    </_content>
+</screen>

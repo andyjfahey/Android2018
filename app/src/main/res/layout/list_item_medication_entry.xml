@@ -1,0 +1,170 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minHeight="120dp">
+
+    <RelativeLayout
+        android:id="@+id/notification_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_home_overlay"
+        android:clickable="true"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="60dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/notification_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 days ago"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/notification_item_pill_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/notification_item_subject"
+            android:layout_alignTop="@+id/notification_item_subject"
+            android:src="@drawable/pill" />
+
+        <TextView
+            android:id="@+id/notification_item_subject"
+            style="@style/Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notification_item_date"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/notification_item_pill_icon"
+            android:layout_toRightOf="@+id/notification_item_pill_icon"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/notification_item_taking_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/notification_item_subject"
+            android:layout_alignTop="@+id/notification_item_subject"
+            android:layout_toEndOf="@+id/notification_item_subject"
+            android:layout_toRightOf="@+id/notification_item_subject"
+            android:src="@drawable/tick"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/notification_item_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notification_item_subject"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/notification_item_pill_icon"
+            android:layout_toRightOf="@+id/notification_item_pill_icon"
+            android:textSize="18dp" />
+
+<!--        <TextView
+            android:id="@+id/btn_reminders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_reminders"
+            android:drawableRight="@drawable/ic_settings_cog"
+            android:background="@color/tiffany_blue"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textAllCaps="true"
+            android:textColor="@color/label_color"
+            android:textSize="24dp"
+            android:layout_below="@+id/notification_item_pill_icon"/>-->
+
+<!--        <TextView
+            android:id="@+id/tracker_reminders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_reminders"
+            android:drawableRight="@drawable/ic_settings_cog"
+            android:background="@color/tiffany_blue"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textAllCaps="true"
+            android:textColor="@color/label_color"
+            android:textSize="24dp"
+            android:layout_below="@+id/notification_item_pill_icon"/>-->
+
+<!--        <Button
+            android:text="Take Photo"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:id="@+id/btn_photo"
+            android:background="@drawable/btn_tiffany_blue"
+            android:layout_below="@+id/notification_item_message"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:drawableRight="@drawable/ic_camera"/>
+        <Button
+            android:text="Reminders"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:id="@+id/btn_reminders"
+            android:background="@drawable/btn_tiffany_blue"
+            android:layout_below="@+id/btn_photo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:drawableRight="@drawable/ic_settings_cog"/>-->
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/notification_item_action_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:background="@drawable/item_home_overlay"
+        android:clickable="true"
+        android:padding="16dp"
+        android:src="@drawable/ic_edit" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="#E3E0E1" />
+
+    <ImageView
+        android:id="@+id/notification_item_delete_action_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/item_home_overlay"
+        android:clickable="true"
+        android:padding="16dp"
+        android:src="@drawable/ic_tracker_list_delete_dark" />
+
+
+    <uk.co.healtht.healthtouch.ui.widget.ExpandableHeightListView
+        android:id="@+id/list_reminders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tracker_note"/>
+
+
+    <!--    <TextView
+            android:id="@+id/tracker_reminders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_reminders"
+            android:drawableRight="@drawable/ic_settings_cog"
+            android:background="@drawable/item_menu_overlay"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:textAllCaps="true"
+            android:textColor="@color/label_color"
+            android:textSize="24dp"/>-->
+
+</FrameLayout>

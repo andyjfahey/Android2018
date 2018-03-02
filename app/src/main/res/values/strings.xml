@@ -1,0 +1,220 @@
+<resources>
+
+    <!-- you need to change app_name for live version from HealthTouchDev to HealthTouch-->
+    <string name="app_name">HealthTouch</string>
+    <string name="about_msg">&lt;b&gt;Build version:&lt;/b&gt; {0}&lt;br&gt;&lt;b&gt;Build Date:&lt;/b&gt; {1}</string>
+    <string name="build_version">Build version:</string>
+    <string name="build_date">Build Date:</string>
+    <string name="btn_OK">OK</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_no">No</string>
+    <string name="btn_add">INVITE SERVICE</string>
+    <string name="btn_log_in">LOG IN</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_create_account">CREATE NEW ACCOUNT</string>
+    <string name="btn_forgot_password">Forgot Password?</string>
+    <string name="btn_reset_password">Reset</string>
+    <string name="btn_add_medication">ADD MEDICATION</string>
+    <string name="create_account_t_and_c">By creating an account, I accept the</string>
+    <string name="error_internet_down">Found a problem connecting. Check you\'re online or try again later.</string>
+    <string name="error_wrong_device_date">The time or date of your device seems to be incorrect.\nThis may cause connection problems.</string>
+    <string name="error_password_match">Passwords don\'t match</string>
+    <string name="error_email_match">Emails don\'t match</string>
+    <string name="error_field_required">Required</string>
+    <string name="error_invalid_email">Invalid Email</string>
+    <string name="hint_user_name">Email</string>
+    <string name="hint_type_email">Type email</string>
+    <string name="hint_type_address">Type address</string>
+    <string name="hint_type_city">Type city</string>
+    <string name="hint_type_postcode">Type postcode</string>
+    <string name="hint_nhs_number">10 digits</string>
+    <string name="hint_type_password">type password</string>
+    <string name="hint_type_password_new">type new password</string>
+    <string name="hint_type_password_again">re type new password</string>
+    <string name="hint_note">NOTES</string>
+    <string name="hint_note2">Note</string>
+    <string name="home_trackers">TRACKERS</string>
+    <string name="home_messages">MESSAGES</string>
+    <string name="home_patient_passport">PATIENT PASSPORT</string>
+    <string name="home_network">CARE NETWORK</string>
+    <string name="home_medication">MEDICATION</string>
+    <string name="home_settings">SETTINGS</string>
+    <string name="settings_profile">MY PROFILE</string>
+    <string name="settings_security">SECURITY</string>
+    <string name="settings_privacy">PRIVACY</string>
+    <string name="settings_password">CHANGE PASSWORD</string>
+    <string name="settings_logout">LOGOUT</string>
+    <string name="settings_about">ABOUT</string>
+    <string name="settings_threshould_units">(UNITS: {0})</string>
+    <string name="security_text">Health Touch uses strong encryption technology to connect, store and transmit your data securely.\n\nYour tracking entries, medication and personal data can only be accessed in Health Touch by you and your care network.\n\nThe Health Touch team recommends that you use a password of at least eight characters with a mix of numbers and letters.</string>
+    <string name="privacy_text1">Your privacy is important to us.\n\nHealth Touch lets you track, manage, and share your health data. This is your data and we recognize this can be important, sensitive and private information. So we\'ve developed a Privacy Policy that covers how we collect, use, disclose, transfer, and store your information. Please take the time to read and familiarize yourself with our privacy policy at this link:</string>
+    <string name="privacy_text2">and let us know by email if you have any questions:</string>
+    <string name="tracker_logout_confirmation">Do you really want to log out?</string>
+    <string name="label_first_name">First name</string>
+    <string name="label_last_name">Last name</string>
+    <string name="label_email">Email</string>
+    <string name="label_user_name">Confirm Email</string>
+    <string name="label_gender">Gender</string>
+    <string name="label_date_birth">Date of birth</string>
+    <string name="label_password">Password</string>
+    <string name="label_confirm">Confirm</string>
+    <string name="label_street">Street</string>
+    <string name="label_city">City</string>
+    <string name="label_postcode">Postcode</string>
+    <string name="label_nhs_number">NHS Number</string>
+    <string name="label_type_password">CURRENT PASSWORD</string>
+    <string name="label_type_password_new">PASSWORD</string>
+    <string name="label_type_password_again">CONFIRM PASSWORD</string>
+    <string name="label_reminders">REMINDERS</string>
+    <string name="label_reminder">REMINDER</string>
+    <string name="label_thresholds">THRESHOLDS</string>
+    <string name="label_month_day">ON THE</string>
+    <string name="label_day_of_week">ON</string>
+    <string name="label_at">AT</string>
+    <string name="label_minimum">MINIMUM</string>
+    <string name="label_maximum">MAXIMUM</string>
+    <string name="add_medication_name">NAME</string>
+    <string name="add_medication_dosage">DOSAGE</string>
+    <string name="add_medication_taking">CURRENTLY TAKING IT</string>
+    <string name="medication_date">Updated: {0}</string>
+    <string name="message_type_message">MESSAGE</string>
+    <string name="message_type_care">CARE NETWORK INVITE</string>
+    <string name="message_type_tracker">TRACKER ALERT</string>
+    <string name="message_type_tracker_new">NEW TRACKER ALERT</string>
+    <string name="message_type_medication">MEDICATION</string>
+    <string name="message_type_profile">PLEASE COMPLETE YOUR PROFILE</string>
+    <string name="care_network_my">MY NETWORK</string>
+    <string name="care_network_invite">INVITE NEW SERVICE</string>
+    <string name="care_network_about">ABOUT THIS SERVICE</string>
+    <string name="care_network_visible_to">People who can see your data</string>
+    <string name="chart_empty_label">Start tracking now!</string>
+    <string name="menu_home">HOME</string>
+    <string name="menu_security">SECURITY STATEMENT</string>
+    <string name="progress_loading">Loading&#8230;</string>
+    <string name="tracker_delete_confirmation">Do you really want to delete this entry?</string>
+    <string name="consent_message">Click \'YES\' to consent to share your Health Touch data with</string>
+    <string name="message_delete_confirmation">Do you really want to delete this message?</string>
+    <string name="threshold_warning">Generally its a good idea to go with the values that have been set by the health professional.</string>
+    <string name="title_t_and_c">Terms &amp; Conditions</string>
+    <string name="title_privacy">PRIVACY POLICY</string>
+    <string name="title_new_account">Create New Account</string>
+    <string name="title_profile">MY PROFILE</string>
+    <string name="title_login_details">LOGIN DETAILS</string>
+    <string name="title_forgot_password">RESET PASSWORD</string>
+    <string name="title_change_password">Change Password</string>
+    <string name="title_add_medication">Add Medication</string>
+    <string name="title_form">Form</string>
+    <string name="title_network_services_invite">Invite New Services</string>
+    <string name="select_date">Select date</string>
+    <string name="date_not_in_past">Future date can not be selected.</string>
+    <string name="ok">Ok</string>
+    <string name="note">Note!</string>
+    <string name="click_start_date">Start date</string>
+    <string name="click_end_date">End date</string>
+    <string name="provider_name">uk.co.healtht.healthtouch.network.provider</string>
+    <string name="account_type">com.healthtouch</string>
+    <string name="specify_start_date">Specify start date firstly</string>
+    <string name="start_bigger_end_date_error">Specify correct dates</string>
+    <string name="fields_empty">You must enter a tracker value</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="ml">ml</string>
+    <string name="less_than_week">Selected period should be longer than a week</string>
+    <string name="leave">Leave</string>
+    <string name="service_info">SERVICE INFO</string>
+    <string name="invitation">INVITATION</string>
+    <string name="invite">Invite</string>
+
+    <!--Tracker graph -->
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="all">All</string>
+    <string name="custom">Custom</string>
+    <string name="security_and_privacy"><![CDATA[SECURITY & PRIVACY]]></string>
+    <string name="settings_login_details">LOGIN DETAILS</string>
+    <string name="login_state_text">KEEP ME LOGGED IN ON THIS DEVICE</string>
+    <string name="current_password_camel">Current password</string>
+    <string name="password_text_camel">Password</string>
+    <string name="confirm_password_camel">Confirm Password</string>
+    <string name="sub_section_invited_service">MY INVITES</string>
+    <string name="form_send_button">Send</string>
+    <string name="form_not_synced_message">Unable to access form.</string>
+    <string name="no_data_text">No data available, turn on network connection to Sync.</string>
+    <string name="log_on_offline_error">Must be online to log on.</string>
+    <string name="sync_dialog_text">Synchronising your data.  This will take a minute or two.</string>
+    <string name="back_action_text">Back</string>
+    <string name="start">Start:</string>
+    <string name="end">End:</string>
+    <!--<string name="gcm_sender_id">175202613943</string>-->
+    <string name="gcm_sender_id">856258498359</string>
+
+    <!-- errors -->
+    <string name="please_enter_username">Please enter your email.</string>
+    <string name="please_enter_password">Please enter your password.</string>
+    <string name="email_or_password_incrrect">Email or password is incorrect.</string>
+    <string name="please_verify_internet">Network error: Verify your Internet connection.</string>
+    <string name="sync_internet_error_message">To synchronise your data with the service you will need to connect to the internet. Connect to the internet and try again</string>
+
+    <string name="please_contact_you_gp_surgery_as_soon_as_possible">Please contact you GP Surgery as soon as possible.</string>
+
+    <!-- Questions -->
+    <string name="used_your_preventer_inhaler_today">Used your (brown) preventer inhaler today?</string>
+    <string name="using_reliever_inhaler_more_and_more">Using (blue) reliever inhaler more and more?</string>
+    <string name="waking_at_night_because_of_wheezing">Waking at night because of wheezing, shortness of breath, a tight chest or coughing?</string>
+    <string name="feeling_that_you_cant_keep_up">Feeling that you can\'t keep up with your day-to-day activities?</string>
+    <string name="taking_time_of_because_of_asthma">Missed school or work because of asthma?</string>
+
+    <string name="breath_1">I am too breathless to leave the house or I am breathless when dressing</string>
+    <string name="breath_2">I stop for breath after walking about 100 yards or after a few minutes on level ground</string>
+    <string name="breath_3">On level ground, I walk slower than people of the same age because of breathlessness, or have to stop for breath when walking at my own pace</string>
+    <string name="breath_4">I get short of breath when hurrying on level ground or walking up a slight hill</string>
+    <string name="breath_5">I only get breathless with strenuous exercise</string>
+
+    <string name="stool_1">Separate hard lumps, like nuts (hard to pass)</string>
+    <string name="stool_2">Sausage-shaped, but lumpy</string>
+    <string name="stool_3">Like a sausage but with cracks on it’s surface</string>
+    <string name="stool_4">Like a sausage or snake, smooth and soft</string>
+    <string name="stool_5">Soft blobs with clear cut edges (passed easily)</string>
+    <string name="stool_6">Fluffy pieces with ragged edges, a mushy stool</string>
+    <string name="stool_7">Watery, no solid pieces. Entirely liquid</string>
+
+
+    <!-- Text -->
+    <string name="care">care </string>
+    <string name="service">Service</string>
+    <string name="service_text">has asked to join your care network. You need to accept to share your health data with this service. Tap this message to see the invitation.</string>
+
+    <string name="accept">Accept</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Doyouwanttodeletemed">Do you really want to delete this medication?</string>
+
+    <string-array name="pain_title">
+        <item>Head</item>
+        <item>Hand</item>
+        <item>Back</item>
+        <item>Stomach</item>
+        <item>Feet / Legs</item>
+    </string-array>
+
+    <string-array name="pain_values">
+        <item>0 - No Pain</item>
+        <item>1 - Very Mild Pain</item>
+        <item>2 - Mild Pain</item>
+        <item>3 - Mild to Moderate Pain</item>
+        <item>4 - Moderate Pain</item>
+        <item>5 - Moderate to Severe Pain</item>
+        <item>6 - Severe Pain</item>
+        <item>7 - Severe to Very Severe Pain</item>
+        <item>8 - Very Severe Pain</item>
+        <item>9 - Very Very Severe Pain</item>
+        <item>10 - Worst Pain Possible</item>
+    </string-array>
+
+</resources>

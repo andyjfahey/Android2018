@@ -1,0 +1,60 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--    android:background="@color/tiffany_blue" -->
+
+    <LinearLayout
+        android:id="@+id/invite_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_home_overlay_updated"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:visibility="gone">
+
+        <!--        tiffany_blue-->
+
+        <TextView
+            android:id="@+id/network_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/care_network_invite"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/invite_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/item_home_overlay"
+            android:clickable="true"
+            android:padding="16dp"
+            android:src="@drawable/ic_notification_add_light"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gainsboro">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_network"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:text="@string/care_network_my"
+            android:textSize="18sp"/>
+    </FrameLayout>
+
+</LinearLayout>

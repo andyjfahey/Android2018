@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_main">#FFDFDFD5</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="cream">#FFDFDFD5</color>
+    <color name="menu_separator">#FFD3D3D3</color>
+    <color name="home_item_highlight">#80D3D3D3</color>
+    <color name="tracker_tab_default">#FFD3D3D3</color>
+    <color name="tracker_tab_pressed">#FFBABABA</color>
+    <color name="text">#FF85867F</color>
+    <color name="text_label">#FF464642</color>
+    <color name="title_bar">#FF204D6D</color>
+    <color name="transparent">#00000000</color>
+    <color name="label_color">#FF4C5356</color>
+    <color name="light_gray">#FFD3D3D3</color>
+    <color name="tiffany_blue">#FF11B4B4</color>
+    <color name="tiffany_blue_darkened">#FF55B4B4</color>
+    <color name="indigo">#FF124960</color>
+    <color name="vegas_gold">#FFD6B751</color>
+    <color name="light_carmine_pink">#FFEF7468</color>
+    <color name="rifle_green">#FF3C3F3E</color>
+    <color name="gainsboro">#FFDDDDDD</color>
+    <color name="tracker_header_background">#C1C1C1</color>
+    <color name="blood_pressure_add_trackers_layout_background">#D3D3D3</color>
+    <color name="tracker_header_color">#555555</color>
+    <color name="tracker_entry_screen_background">#EFEFF4</color>
+    <color name="note_hint_color">#C3C3C5</color>
+    <color name="tracker_graph_entry_out_threshhold">#E72356</color>
+    <color name="tracker_answer_entry_out_threshhold">#FECCCD</color>
+    <color name="title_custom_action_color">#22D3D3D3</color>
+    <color name="green_background_answer">#a4c639</color>
+    <color name="text_color">#838383</color>
+
+</resources>

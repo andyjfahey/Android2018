@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_bar_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/title_bar"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ht_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/action_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/ht_logo"
+        android:layout_toRightOf="@+id/ht_logo"
+        android:text="@string/back_action_text"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/action_indicator"
+        android:layout_toRightOf="@+id/action_indicator"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/security_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:src="@drawable/ic_menu_secure"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/custom_action_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/custom_action_background"
+        android:lines="1"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/custom_action"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/custom_action_btn"
+        android:layout_alignTop="@+id/custom_action_btn"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/custom_action_btn"
+        android:layout_toStartOf="@+id/custom_action_btn"
+        android:background="@android:color/darker_gray"
+        android:visibility="invisible" />
+
+</RelativeLayout>

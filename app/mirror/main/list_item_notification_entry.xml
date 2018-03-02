@@ -1,0 +1,21 @@
+<!-- [ Mirror metadata ] generatedAt: 1438622206236 -->
+<!-- Generated screen file. Fill the id tags below with content with
+which to populate your previewed layout. For a complete specification
+of sample data, please see http://jimulabs.com/sample-data-specifications/ 
+
+Valid attributes on <screen> tag: theme="@style/someTheme" inEditMode="false" overlay="@drawable/mockup" -->
+<screen>
+    <_content layout="@layout/list_item_notification_entry">
+        <!-- TextView Examples:
+        <notification_item_date text="@string/string_resource" />
+        <notification_item_date text="Text literal" textSize="14sp" /> -->
+        <notification_item_date />
+        <notification_item_subject />
+        <notification_item_message />
+        <!-- ImageView Examples:
+        <notification_item_action_icon src="@drawable/image_resource" />
+        <notification_item_action_icon src="relative_path/image.jpg" /> -->
+        <notification_item_action_icon />
+        <notification_item_delete_icon />
+    </_content>
+</screen>

@@ -1,0 +1,67 @@
+<!-- [ Mirror metadata ] generatedAt: 1438622206172 -->
+<!-- Generated screen file. Fill the id tags below with content with
+which to populate your previewed layout. For a complete specification
+of sample data, please see http://jimulabs.com/sample-data-specifications/ 
+
+Valid attributes on <screen> tag: theme="@style/someTheme" inEditMode="false" overlay="@drawable/mockup" -->
+<screen>
+    <_content layout="@layout/list_item_settings_thresholds">
+        <!-- TextView Examples:
+        <tracker_name text="@string/string_resource" />
+        <tracker_name text="Text literal" textSize="14sp" /> -->
+        <tracker_name />
+        <tracker_units />
+        <label_minimum />
+        <tracker_spinner_minimum>
+            <items layout="@android:layout/simple_spinner_item" >
+                <_item>
+                    <text1>Dalmatian</text1>
+                </_item>
+                <_item>
+                    <text1>Great Dane</text1>
+                </_item>
+                <_item>
+                    <text1>Shi Tzu</text1>
+                </_item>
+                <_item>
+                    <text1>Corgi</text1>
+                </_item>
+                <_item>
+                    <text1>Labrador</text1>
+                </_item>
+                <_item>
+                    <text1>Doberman</text1>
+                </_item>
+                <_item>
+                    <text1>Chihuahua</text1>
+                </_item>
+            </items>
+                </tracker_spinner_minimum>
+        <label_maximum />
+        <tracker_spinner_maximum>
+            <items layout="@android:layout/simple_spinner_item" >
+                <_item>
+                    <text1>Vancouver</text1>
+                </_item>
+                <_item>
+                    <text1>Cairo</text1>
+                </_item>
+                <_item>
+                    <text1>New York</text1>
+                </_item>
+                <_item>
+                    <text1>San Francisco</text1>
+                </_item>
+                <_item>
+                    <text1>Seattle</text1>
+                </_item>
+                <_item>
+                    <text1>Hong Kong</text1>
+                </_item>
+                <_item>
+                    <text1>Tokyo</text1>
+                </_item>
+            </items>
+                </tracker_spinner_maximum>
+    </_content>
+</screen>

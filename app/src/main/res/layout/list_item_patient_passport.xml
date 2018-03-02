@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="horizontal">-->
+
+    <ImageView
+        android:id="@+id/patient_passport_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:tint="@color/vegas_gold"/>
+
+    <TextView
+        android:id="@+id/patient_passport_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/patient_passport_icon"
+        android:layout_toRightOf="@id/patient_passport_icon"
+        android:textSize="16sp"/>
+
+    <!--</LinearLayout>-->
+
+    <uk.co.healtht.healthtouch.ui.widget.TrackerCircularBar
+        android:id="@+id/tracker_circular_bar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tracker_circular_bar"
+        android:layout_gravity="bottom"
+        android:background="#E3E0E1"/>
+
+</RelativeLayout>

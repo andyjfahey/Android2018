@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/tiffany_blue"
+    android:orientation="horizontal">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textView2"
+        android:background="@color/tracker_header_color"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/plus_circle_white"
+        android:background="@color/tiffany_blue"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/systolic_pressure_value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:visibility="gone"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/done_image_systolic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="uk.co.healtht.healthtouch">
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <permission
+        android:name="uk.co.healtht.healthtouch.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission android:name="uk.co.healtht.healthtouch.permission.C2D_MESSAGE"/>
+
+    <!-- Accessing camera hardware -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".HTApplication"
+        android:allowBackup="false"
+        android:fullBackupOnly="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="928f4ff9b45befaf920e7231947fa755db7e651b"/>
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="healthtouch"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+
+        <receiver android:name=".network.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".network.synchronization.AuthenticateService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator"/>
+        </service>
+
+<!--        <service
+            android:name=".network.synchronization.SyncAdapterService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/sync_adapter"/>
+        </service>-->
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="uk.co.healtht.healthtouch"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".network.pushnotification.GcmPushListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".network.pushnotification.GcmIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+
+        <service android:name=".network.pushnotification.RegistrationIntentService"/>
+        <service
+            android:name=".network.LocalNotificationService"
+            android:enabled="true"/>
+
+        <provider
+            android:name=".network.synchronization.SyncProvider"
+            android:authorities="@string/provider_name"
+            android:exported="false"
+            android:syncable="true"/>
+
+        <!-- Debug activities -->
+        <activity
+            android:name=".debug.DebugActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:host="htdebug.com"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="uk.co.healtht.healthtouch.util_helpers.AlarmReceiver">
+        </receiver>
+
+        <receiver
+            android:name=".util_helpers.BootBroadcastReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="a6b381276e1c65a9cfa67d73b98c5871465c4f12"/>
+    </application>
+
+</manifest>

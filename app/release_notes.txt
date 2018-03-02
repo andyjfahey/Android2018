@@ -1,0 +1,6 @@
+- v0.9.0
+All dev should now be in place. Anything missing or that doesn't look right is a bug.
+Reported bugs will have priority.
+
+- v0.2.0
+More progress on messages and graphs

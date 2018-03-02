@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/row_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/contact_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/settings_profile_2"
+        android:tint="@color/tiffany_blue"/>
+
+    <TextView
+        android:id="@+id/contact_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/contact_img"
+        android:layout_toLeftOf="@+id/contact_img_delete"
+        android:layout_toRightOf="@+id/contact_img"
+        android:layout_toStartOf="@+id/contact_img_delete"
+        android:textColor="@color/transparent_black"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/contact_img_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_tracker_list_delete_dark"/>
+
+</RelativeLayout>

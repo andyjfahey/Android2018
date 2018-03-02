@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/systolic_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/tiffany_blue"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/systolic_header"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/tracker_header_color"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SYSTOLIC"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/systolic_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/plus_circle_white"/>
+
+            <TextView
+                android:id="@+id/systolic_pressure_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/done_image_systolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@drawable/shadow">-->
+
+        <!--</LinearLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/diastolic_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:background="@color/tiffany_blue">
+
+            <LinearLayout
+                android:id="@+id/diastolic_header"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/tracker_header_color"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DIASTOLIC"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/diastolic_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/plus_circle_white"/>
+
+            <TextView
+                android:id="@+id/diastolic_pressure_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:text="TEST"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/done_image_diastolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

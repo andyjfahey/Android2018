@@ -1,0 +1,40 @@
+<!-- [ Mirror metadata ] generatedAt: 1438622206205 -->
+<!-- Generated screen file. Fill the id tags below with content with
+which to populate your previewed layout. For a complete specification
+of sample data, please see http://jimulabs.com/sample-data-specifications/ 
+
+Valid attributes on <screen> tag: theme="@style/someTheme" inEditMode="false" overlay="@drawable/mockup" -->
+<screen>
+    <_content layout="@layout/fragment_create_account">
+        <field_gender>
+            <items layout="@android:layout/simple_spinner_item" >
+                <_item>
+                    <text1>Apple</text1>
+                </_item>
+                <_item>
+                    <text1>Orange</text1>
+                </_item>
+                <_item>
+                    <text1>Pear</text1>
+                </_item>
+                <_item>
+                    <text1>Grapefruit</text1>
+                </_item>
+                <_item>
+                    <text1>Banana</text1>
+                </_item>
+                <_item>
+                    <text1>Lemon</text1>
+                </_item>
+                <_item>
+                    <text1>Carrot</text1>
+                </_item>
+            </items>
+                </field_gender>
+        <!-- TextView Examples:
+        <field_date_birth text="@string/string_resource" />
+        <field_date_birth text="Text literal" textSize="14sp" /> -->
+        <field_date_birth />
+        <btn_t_and_c />
+    </_content>
+</screen>

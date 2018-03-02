@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_bar_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/ht_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/health_touch_logo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/security_iv"
+            android:src="@drawable/health_touch" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ht_logo"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/security_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_menu_secure" />
+
+    </RelativeLayout>
+</RelativeLayout>

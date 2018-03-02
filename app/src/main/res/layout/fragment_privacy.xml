@@ -1,0 +1,48 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/title_bar_height"
+            android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:background="@color/white"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:textSize="18dp"
+            android:textColor="@color/text_label"
+            android:text="@string/privacy_text1"/>
+
+        <TextView
+            android:id="@+id/privacy_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:textSize="16dp"
+            android:textColor="@color/text_label"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:textSize="18dp"
+            android:textColor="@color/text_label"
+            android:text="@string/privacy_text2"/>
+
+        <TextView
+            android:id="@+id/privacy_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="16dp"
+            android:textColor="@color/text_label"/>
+    </LinearLayout>
+</ScrollView>

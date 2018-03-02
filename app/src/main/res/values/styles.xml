@@ -1,0 +1,79 @@
+<resources>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- See Android v4.4 - http://stackoverflow.com/questions/12246388/remove-shadow-below-actionbar -->
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+
+        <!-- http://stackoverflow.com/questions/10409871/how-to-increase-spinner-item-font-size -->
+        <!-- For the resting Spinner style -->
+        <item name="android:spinnerItemStyle">
+            @style/spinnerItemStyle
+        </item>
+
+        <!-- For each individual Spinner list item once clicked on -->
+        <item name="android:spinnerDropDownItemStyle">
+            @style/spinnerDropDownItemStyle
+        </item>
+    </style>
+
+
+    <style name="spinnerItemStyle">
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:textColor">#FF000000</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="MenuItemBase">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/item_menu_overlay</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="MenuItem" parent="MenuItemBase">
+    </style>
+
+    <style name="TableLabel">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:textColor">@color/label_color</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="FormLabel">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:textColor">@color/label_color</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="TextLabel">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:textColor">@color/label_color</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,157 @@
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginTop="@dimen/title_bar_height"
+             android:background="@color/white">
+
+    <!-- Child 0 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="@string/label_email"/>
+
+            <EditText
+                android:id="@+id/field_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:enabled="false"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/transparent_black"/>
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="@string/label_first_name"/>
+
+            <EditText
+                android:id="@+id/field_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:singleLine="true"/>
+
+            <TextView
+                style="@style/FormLabel"
+                android:text="@string/label_last_name"/>
+
+            <EditText
+                android:id="@+id/field_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:singleLine="true"/>
+
+            <LinearLayout
+                android:id="@+id/field_password_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="@string/current_password_camel"/>
+
+                <EditText
+                    android:id="@+id/field_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="20dp"
+                    android:hint="@string/hint_type_password"
+                    android:inputType="textPassword"
+                    android:password="true"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/field_password_new_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="@string/password_text_camel"/>
+
+                <EditText
+                    android:id="@+id/field_password_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="20dp"
+                    android:hint="@string/hint_type_password_new"
+                    android:inputType="textPassword"
+                    android:password="true"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/field_password_confirm_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="@string/confirm_password_camel"/>
+
+                <EditText
+                    android:id="@+id/field_password_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="20dp"
+                    android:hint="@string/hint_type_password_again"
+                    android:inputType="textPassword"
+                    android:password="true"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/details_login_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_span="2"
+                android:checked="true"
+                android:text="@string/login_state_text"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Child 1 -->
+    <ProgressBar
+        style="?android:attr/progressBarStyleInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+</ViewFlipper>
